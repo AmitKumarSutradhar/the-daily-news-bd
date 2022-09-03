@@ -1,14 +1,17 @@
 // Display Catagory News Details 
 const loadAllNews = (newsId) =>{
-    // fetch('https://openapi.programming-hero.com/api/news/0282e0e58a5c404fbd15261f11c2ab6a')
-    fetch(`https://openapi.programming-hero.com/api/news/${newsId}`)
+    fetch('https://openapi.programming-hero.com/api/news/category/01')
     .then(res => res.json())
-    .then(data => displayAllNews(data.data[0]));
+    .then(data => displayAllNews(data.data));
 }
 
 const displayAllNews = allNews => {
-    const newsDetails = document.getElementById("newsDetails");
+    // console.log(allNews);
     const newsItem = document.createElement("div");
+    allNews.forEach(newsDetails => {
+        console.log(newsDetails);
+        
+    });
     // newsItem.innerHTML = `
     //     <div class="col-lg-12 col-md-12 col-12">
     //                     <div class="card mb-3">
@@ -37,9 +40,9 @@ const displayAllNews = allNews => {
     //                     </div>
     //                 </div>
     // `;
-    newsDetails.appendChild(newsItem);
+    // newsDetails.appendChild(newsItem);
 
-    console.log(allNews);
+    // console.log(allNews);
 }
 
 // const loadAllNewsDetails = (newsId) => {
@@ -49,7 +52,7 @@ const displayAllNews = allNews => {
 //     // console.log(allNews);
 // };
 // loadAllNewsDetails();
-loadAllNews('${data.data[0])}');
+loadAllNews();
 
 
 
