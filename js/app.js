@@ -38,7 +38,7 @@ const displayAllNews = allNews => {
 
                                                 <div class="author-details">
                                                     <h3 class="author-name">${newsDetails.author.name ? newsDetails.author.name : 'No data Available'}</h3>
-                                                    <p class="author-blog-date">${newsDetails.author.published_date}</p>
+                                                    <p class="author-blog-date">${newsDetails.author.published_date ? newsDetails.author.published_date : 'No date Found'}</p>
                                                 </div>
                                             </div>
                                             <div class="news-total-view">
