@@ -13,7 +13,7 @@ const loadCatListItem = catlist => {
         // console.log(news.category_id);
         const li = document.createElement('li');
         li.innerHTML = `
-            <button class="text-decoration-none text-secondary py-2" href="" onclick="loadAllNews('${news.category_id}')" >${news.category_name}</button>
+            <button class="text-decoration-none text-secondary py-2 my-2" href="" onclick="loadAllNews('${news.category_id}')" >${news.category_name}</button>
         `;
         newsContainer.appendChild(li);
     });
