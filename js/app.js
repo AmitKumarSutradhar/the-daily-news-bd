@@ -8,7 +8,7 @@ const loadAllNews = async id => {
 }
 
 const displayAllNews = allNews => {
-    console.log(allNews);
+    // console.log(allNews);
 
     const totalItemContainer = document.getElementById('total-item');
     totalItemContainer.innerText = allNews.length ? allNews.length : 'No';
@@ -46,7 +46,7 @@ const displayAllNews = allNews => {
                                                     <p class="author-blog-date"></p>
                                             </div>
                                             <div class="">
-                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-arrow-right"></i></button>
                                             </div>
 
                                         </div>

@@ -1,4 +1,4 @@
-// Display Catagories Name Item 
+// Display Catagories Name List Item 
 
 const loadCatList = () => {
     fetch('https://openapi.programming-hero.com/api/news/categories')
